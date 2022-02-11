@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.conteiner{
+    background-color: #f7e0ee;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.conteiner .header,
+.conteiner .footer,
+.conteiner .menu,
+.conteiner .img_uno,
+.conteiner .move{
+    grid-column: span 4;
+}
+
+.conteiner .header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    height: 60px;
+}
+
+.header h1{
+    margin: 10px;
+}
+
+.header .insta{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+}
+
+.header .insta img{
+    padding: 10px;
+}
+
+.conteiner .menu{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+}
+
+.menu a{
+    color: black;
+}
+
+.img_uno img{ 
+   max-width: 100%;
+   height: auto;
+}
+
+.img_uno a{
+    color: black;
+}
+
+.videos_t{
+    width: 100%;
+    display: flex;
+    grid-column: span 4;
+    justify-content: center;
+}
+
+.conteiner .move{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.move img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.conteiner .footer{
+    background-color: #000;
+    height: 70px;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img{
+    max-width: 10%;
+    height: 50%;
+    margin: 5px;
+}
