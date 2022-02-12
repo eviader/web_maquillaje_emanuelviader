@@ -55,6 +55,8 @@ body{
 
 .menu a{
     color: black;
+    padding: 1px 5.5px 4.5px 5.5px;
+    border-radius: 4px;
 }
 
 .img_uno img{ 
@@ -81,11 +83,9 @@ body{
     margin-bottom: 10px;
 }
 
-.move img{
-    max-width: 100%;
-    height: auto;
+.move .box{
+    box-shadow: 10px 10px 30px grey;
 }
-
 
 .conteiner .footer{
     background-color: #000;
@@ -102,4 +102,15 @@ body{
     max-width: 10%;
     height: 50%;
     margin: 5px;
+}
+
+.menu a.background:hover{
+    background-color:black;
+    color: white;
+    transition: background-color 1s, color 1s;
+}
+
+.move .box:hover{
+    opacity: 0.6;
+    border: 5px solid white;
 }
