@@ -6,56 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>OcchiMua</title>
 </head>
 <body>
-    <div class="conteiner">
-        <header class="header">
-            <h1>OcchiMua</h1>
-            <div class="insta">
-                <img src="img/insta.png" alt="">
-            </div>
-        </header>
-        
-        <nav class="menu">
-            <a class="background" style="text-decoration: none;" id="menu_inicio" href= "index.html">Inicio</a>
-            <a class="background" style="text-decoration: none;"id="menu_origenes" href= "origenes.html">Quienes Somos</a>
-            <a class="background" style="text-decoration: none;" id="menu_tips" href= "tips.html">Tips</a></li>
-            <a class="background" style="text-decoration: none;" id="menu_tutoriales" href= "tutoriales.html">Tutoriales</a>
-            <a class="background"style="text-decoration: none;" id="menu_contacto" href= "contacto.html">Contáctanos</a>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">OcchiMua</a>
+            <button class="navbar-toggler" type="button" data-bs-tgit statusoggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" href="#">Quienes somos</a>
+                  <a class="nav-link active" href="#">tips</a>
+                  <a class="nav-link active" href="#">Videos Tutoriales</a>
+                  <a class="nav-link active" href="#">Contactanos</a>
+                  <div class="d-inline-flex p-2 bd-highlight">
+                      <img src="img/insta.png" alt="">
+                  </div>
+              </div>
+          </div>
+          </div>
         </nav>
-        
-        <section class="img_uno"> 
-                <img src="img/Imagen1.png" alt="">
-                <p>Servicio de maquillaje</p>
-                <a style="text-decoration: none;" id="menu_contacto" href= "contacto.html">Saber mas ></a>
-                <hr>
-                
-        </section>
 
-        <div class="videos_t">
-            <h2>Videos Tutoriales</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="img/Imagen1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/Imagen1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                  <img src="img/Imagen1.png" class="d-block w-100" alt="...">
+              </div>
+          </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+              </button>
+      </div>
+
+      <div class="pie container-fluid">
+          <p>Servicio de maquillaje.</p>
+          <a class="a" style="text-decoration: none;" href= "contacto.html">Saber mas ></a>
+          <hr class="barra">
+      </div>
+  </header>
+  <section>
+    <div class="titulo-videos">
+        <h1>Video Tutoriales</h1>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <iframe class="card-img-top" width="560" height="315" src="https://www.youtube.com/embed/lgK4jSY2Pbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Video Tutoriales</h5>
+                  <p class="card-text">Contenido exclusivo OcchiMua</p>
+                  <a href= "https://www.youtube.com/embed/lgK4jSY2Pbs" class="btn btn-primary">Ver ahora</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <iframe class="card-img-top" width="560" height="315" src="https://www.youtube.com/embed/nf8ySuesAPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Video Tutoriales</h5>
+                  <p class="card-text">Contenido exclusivo OcchiMua</p>
+                  <a href="https://www.youtube.com/embed/nf8ySuesAPg" class="btn btn-primary">Ver ahora</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <iframe class="card-img-top" width="560" height="315" src="https://www.youtube.com/embed/1thjXzmblyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Video Tutoriales</h5>
+                  <p class="card-text">Contenido exclusivo OcchiMua</p>
+                  <a href="https://www.youtube.com/embed/1thjXzmblyI" class="btn btn-primary">Ver ahora</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <section class="move">
-            <div class="box">
-                <img src="https://loremflickr.com/420/260/makeup" alt="">
-            </div>
-            <div class="box">
-                <img src="https://loremflickr.com/420/260/makeup" alt="">
-            </div>
-            <div class="box">
-                <img src="https://loremflickr.com/420/260/makeup" alt="">
-            </div>
-        </section>
-        
-        <footer class="footer">
-            <h2>OcchiMua</h2>
-            <img src="img/insta.png" alt="">
-        </footer>
-        
-    </div>   
+      </div>
+    </section>
+      <footer>
+        <img src="img/footer.jpg" alt="">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">OcchiMua</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" href="#">Quienes somos</a>
+                  <a class="nav-link active" href="#">tips</a>
+                  <a class="nav-link active" href="#">Videos Tutoriales</a>
+                  <a class="nav-link active" href="#">Contactanos</a>
+                  <div class="d-inline-flex p-2 bd-highlight">
+                      <img src="img/insta.png" alt="">
+                  </div>
+              </div>
+          </div>
+          </div>
+        </nav>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>     
 </body>
 </html>
