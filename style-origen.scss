@@ -68,9 +68,52 @@ header .navbar{
         }
     }
 
+/* Tips*/
+
+.tips{
+    padding: 50px;
+    margin: 2px;
+    
+    .container{
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        .row{
+            .col{
+                height: 400px;
+                width: auto;
+                    img{
+                        border: solid black 1px;
+                        box-shadow: 10px 10px 50px;
+                        height: 100%;
+                        width: auto;
+                }
+            }
+        }
+    }
+}
+
+.tips{
+    h2{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* CONTACTO */
+
+.contacto{
+    col{
+        height: 20px;
+    }
+}
+
+
+
 @media screen and (max-width: 800px) {
     .padre .contenedor_texto2, .contenedor_texto{
-        margin-top: 30px;
+        margin: 30px;
         min-height: 400px;
     }
     

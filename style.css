@@ -172,10 +172,19 @@ section{
     justify-content: center;
 }
 
-.col{
-    margin-top: 20px;
-    margin-bottom: 20px;
+section{
+    min-height: 80vh;
 }
+
+section .col{
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
 
 footer img{
     background-color: #f7e0ee;
@@ -186,4 +195,9 @@ footer img{
 footer .navbar{
     position: sticky;
     bottom: 0;
+}
+
+footer texto_footer{
+    position: relative;
+    z-index: 2;
 }
