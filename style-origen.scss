@@ -1,6 +1,14 @@
-/* Estilo origenes.html */
+
 @import "variantes";
 
+.navbar-nav{
+    a:hover{
+        background-color: map-get($map,col);
+        border-radius: map-get($map,radio);
+            }
+        }
+
+/* Estilo origenes.html */
 body{
     font-family: 'Saira Condensed', sans-serif;
     background-color: $color;
@@ -55,19 +63,13 @@ header .navbar{
    
 
         .contenedor_texto2{
-            position: relative;
-            background-color: white;
+            @extend .contenedor_texto;
             height: 400px;
-            width: 400px;
-            top: 50px;
-            padding: 10px;
-            border-radius: 10px;
-            border-color: black;
-            border-style:groove;
-            font-family: 'Saira Condensed', sans-serif;
         }
     }
 
+
+    
 /* Tips*/
 
 .tips{

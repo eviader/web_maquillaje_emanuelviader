@@ -1,3 +1,8 @@
+.navbar-nav a:hover {
+  background-color: pink;
+  border-radius: 10%;
+}
+
 /* Estilo origenes.html */
 body {
   font-family: 'Saira Condensed', sans-serif;
@@ -46,7 +51,7 @@ header .navbar .navbar-nav a {
           justify-content: space-evenly;
 }
 
-.padre .contenedor_texto {
+.padre .contenedor_texto, .padre .contenedor_texto2 {
   position: relative;
   background-color: white;
   height: 300px;
@@ -60,16 +65,7 @@ header .navbar .navbar-nav a {
 }
 
 .padre .contenedor_texto2 {
-  position: relative;
-  background-color: white;
   height: 400px;
-  width: 400px;
-  top: 50px;
-  padding: 10px;
-  border-radius: 10px;
-  border-color: black;
-  border-style: groove;
-  font-family: 'Saira Condensed', sans-serif;
 }
 
 /* Tips*/
@@ -108,7 +104,7 @@ header .navbar .navbar-nav a {
 }
 
 @media screen and (max-width: 800px) {
-  .padre .contenedor_texto2, .contenedor_texto {
+  .padre .contenedor_texto2, .contenedor_texto, .padre .contenedor_texto2 {
     margin: 30px;
     min-height: 400px;
   }
