@@ -1,203 +1,187 @@
-/*{
-    padding: 0;
-    margin: 0;
+.navbar-nav a:hover {
+  background-color: pink;
+  border-radius: 10%;
 }
 
-body{
-    overflow-x: hidden;
-    font-family: 'Saira Condensed', sans-serif;
+/* Index style*/
+body {
+  font-family: 'Saira Condensed', sans-serif;
 }
 
-.conteiner{
-    background-color: #f7e0ee;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-}
-.conteiner .header,
-.conteiner .footer,
-.conteiner .menu,
-.conteiner .img_uno,
-.conteiner .move{
-    grid-column: span 4;
+header .navbar {
+  background-color: white !important;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.conteiner .header{
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    height: 60px;
+header .navbar-brand {
+  font-size: 30px;
 }
 
-.header h1{
-    margin: 10px;
+header #navbarNavAltMarkup {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
 }
 
-.header .insta{
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    height: auto;
+header #navbarNavAltMarkup img {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 100px;
 }
 
-.header .insta img{
-    padding: 10px;
+header .navbar-nav a {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.conteiner .menu{
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 30px;
+header .pie .a {
+  color: black;
+  position: relative;
+  top: -18px;
 }
 
-.menu a{
-    color: black;
-    padding: 1px 5.5px 4.5px 5.5px;
-    border-radius: 4px;
+header .pie .barra {
+  color: black;
+  margin: 0;
 }
 
-.img_uno img{ 
-   max-width: 100%;
-   height: auto;
+section {
+  background-color: #f7e0ee;
+  min-height: 80vh;
 }
 
-.img_uno a{
-    color: black;
+section .titulo-videos {
+  padding: 10px;
+  text-align: center;
 }
 
-.videos_t{
-    width: 100%;
-    display: flex;
-    grid-column: span 4;
-    justify-content: center;
+section .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-.conteiner .move{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    margin-bottom: 10px;
+footer .navbar {
+  background-color: white !important;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
 }
 
-.move .box{
-    box-shadow: 10px 10px 30px grey;
+footer .navbar-brand {
+  font-size: 25px;
 }
 
-.conteiner .footer{
-    background-color: #000;
-    height: 70px;
-    margin-top: 10px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+footer #navbarNavAltMarkup {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
 }
 
-.footer img{
-    max-width: 10%;
-    height: 50%;
-    margin: 5px;
+footer #navbarNavAltMarkup img {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  left: 100px;
 }
 
-.menu a.background:hover{
-    background-color:black;
-    color: white;
-    transition: background-color 1s, color 1s;
+footer .navbar-nav a {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.move .box:hover{
-    opacity: 0.6;
-    border: 5px solid white;
-}*/
-
-body{
-    font-family: 'Saira Condensed', sans-serif;
+footer img {
+  background-color: #f7e0ee;
+  width: 100%;
+  height: auto;
 }
 
-header .navbar{
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: white !important;
+/* Estilo origenes.html */
+.padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.navbar-brand{
-    font-size: 30px;
+.padre .contenedor_texto, .padre .contenedor_texto2 {
+  position: relative;
+  background-color: white;
+  height: 300px;
+  width: 400px;
+  padding: 10px;
+  top: 50px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: groove;
+  font-family: 'Saira Condensed', sans-serif;
 }
 
-#navbarNavAltMarkup{
-    justify-content: center;
-    font-size: 20px;
+.padre .contenedor_texto2 {
+  height: 400px;
 }
 
-#navbarNavAltMarkup img{
-    height: 40px;
-    width: 40px;
-    position: relative;
-    left: 100px;
+/* Tips*/
+.tips {
+  padding: 50px;
+  margin: 2px;
 }
 
-.navbar-nav a{
-    margin-left: 50px;
-    margin-right: 50px;
+.tips .container {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
-.pie{
-    margin-top: 5px;
+.tips .container .row .col {
+  height: 400px;
+  width: auto;
 }
 
-.pie a{
-    position: relative;
-    top: -18px;
-    color: black;
+.tips .container .row .col img {
+  border: solid black 1px;
+  -webkit-box-shadow: 10px 10px 50px;
+          box-shadow: 10px 10px 50px;
+  height: 100%;
+  width: auto;
 }
 
-.barra{
-    color: #000;
-    margin: 0;
+.tips h2 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-section{
-    background-color: #f7e0ee;
-}
-.titulo-videos{
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+/* CONTACTO */
+.contacto col {
+  height: 20px;
 }
 
-section{
-    min-height: 80vh;
+@media screen and (max-width: 800px) {
+  .padre .contenedor_texto2, .contenedor_texto, .padre .contenedor_texto2 {
+    margin: 30px;
+    min-height: 400px;
+  }
 }
-
-section .col{
-    display: flex;
-    padding: 20px;
-    margin-bottom: 20px;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-footer img{
-    background-color: #f7e0ee;
-    width: 100%;
-    height: auto;
-}
-
-footer .navbar{
-    position: sticky;
-    bottom: 0;
-}
-
-footer texto_footer{
-    position: relative;
-    z-index: 2;
-}
+/*# sourceMappingURL=style.css.map */
