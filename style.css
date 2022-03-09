@@ -1,11 +1,13 @@
 .navbar-nav a:hover {
-  background-color: pink;
-  border-radius: 10%;
+  color: pink !important;
 }
 
 /* Index style*/
 body {
   font-family: 'Saira Condensed', sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+  text-shadow: white 10px 10px 40px;
 }
 
 header .navbar {
@@ -14,6 +16,8 @@ header .navbar {
   position: sticky;
   top: 0;
   z-index: 1;
+  -webkit-box-shadow: 10px 0px 20px;
+          box-shadow: 10px 0px 20px;
 }
 
 header .navbar-brand {
@@ -24,11 +28,11 @@ header #navbarNavAltMarkup {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 header #navbarNavAltMarkup img {
-  height: 40px;
+  height: 38px;
   width: 40px;
   position: relative;
   left: 100px;
@@ -37,6 +41,11 @@ header #navbarNavAltMarkup img {
 header .navbar-nav a {
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 10px;
+}
+
+header .pie {
+  margin-top: 10px;
 }
 
 header .pie .a {
@@ -50,14 +59,33 @@ header .pie .barra {
   margin: 0;
 }
 
+header .imginsta {
+  position: relative;
+  bottom: -9px;
+}
+
+header .insta a {
+  position: relative;
+  left: 30px;
+  top: -5px;
+  color: black;
+}
+
+/* Section de videoturoriales index*/
 section {
+  background: url(img/WallpapermuaBN.png);
+  background-size: cover;
   background-color: #f7e0ee;
   min-height: 80vh;
+  color: white;
+  text-shadow: black -3px -2px;
+  font-size: 25px;
 }
 
 section .titulo-videos {
   padding: 10px;
   text-align: center;
+  color: black;
 }
 
 section .col {
@@ -73,6 +101,34 @@ section .col {
   text-align: center;
 }
 
+section .video0 .video-index0 {
+  height: 550px;
+  width: auto;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 20px black;
+          box-shadow: 5px 5px 20px black;
+}
+
+section .video1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .video1 .video-index1 {
+  height: 550px;
+  width: auto;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+}
+
+/*Footer index*/
 footer .navbar {
   background-color: white !important;
   position: -webkit-sticky;
@@ -111,7 +167,14 @@ footer img {
 }
 
 /* Estilo origenes.html */
-.padre {
+.body_origen {
+  background-color: #f7e0ee;
+  background: url(img/WallpapermuaBN.png);
+  background-size: contain;
+  background-color: #f7e0ee;
+}
+
+.body_origen .padre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +189,7 @@ footer img {
           justify-content: space-evenly;
 }
 
-.padre .contenedor_texto, .padre .contenedor_texto2 {
+.body_origen .padre .contenedor_texto, .body_origen .padre .contenedor_texto2 {
   position: relative;
   background-color: white;
   height: 300px;
@@ -136,10 +199,12 @@ footer img {
   border-radius: 10px;
   border-color: black;
   border-style: groove;
+  -webkit-box-shadow: 4px 4px 20px;
+          box-shadow: 4px 4px 20px;
   font-family: 'Saira Condensed', sans-serif;
 }
 
-.padre .contenedor_texto2 {
+.body_origen .padre .contenedor_texto2 {
   height: 400px;
 }
 
@@ -147,6 +212,11 @@ footer img {
 .tips {
   padding: 50px;
   margin: 2px;
+}
+
+.tips h2 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .tips .container {
@@ -158,28 +228,40 @@ footer img {
 .tips .container .row .col {
   height: 400px;
   width: auto;
+  /* section tip1*/
 }
 
 .tips .container .row .col img {
   border: solid black 1px;
   -webkit-box-shadow: 10px 10px 50px;
           box-shadow: 10px 10px 50px;
-  height: 100%;
+  height: 120%;
   width: auto;
 }
 
-.tips h2 {
+.tips .container .row .col .p-bases {
+  padding: 0px;
+  margin: -60px;
+}
+
+/*Tutoriales*/
+.v-tutoriales h2 {
   text-align: center;
-  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+.v-tutoriales .grid .g-col-6 {
+  padding: 100px;
 }
 
 /* CONTACTO */
-.contacto col {
-  height: 20px;
+.contacto {
+  min-height: 100vh;
+  padding: 20px;
 }
 
 @media screen and (max-width: 800px) {
-  .padre .contenedor_texto2, .contenedor_texto, .padre .contenedor_texto2 {
+  .padre .contenedor_texto2, .contenedor_texto, .body_origen .padre .contenedor_texto2 {
     margin: 30px;
     min-height: 400px;
   }
