@@ -1,5 +1,7 @@
-.navbar-nav a:hover {
+.navbar-nav a:hover, .navbar a:hover {
   color: pink !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /* Index style*/
@@ -78,7 +80,6 @@ section {
   background-color: #f7e0ee;
   min-height: 80vh;
   color: white;
-  text-shadow: black -3px -2px;
   font-size: 25px;
 }
 
@@ -126,6 +127,15 @@ section .video1 .video-index1 {
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 20px;
           box-shadow: 5px 5px 20px;
+}
+
+section .container-texto {
+  background-color: black;
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 0.8;
+  -webkit-box-shadow: 2px 2px 25px #f7e0ee;
+          box-shadow: 2px 2px 25px #f7e0ee;
 }
 
 /*Footer index*/
@@ -212,11 +222,14 @@ footer img {
 .tips {
   padding: 50px;
   margin: 2px;
+  font-size: 20px;
 }
 
 .tips h2 {
   text-align: center;
   margin-bottom: 50px;
+  margin-top: -20px;
+  color: black;
 }
 
 .tips .container {
@@ -239,15 +252,38 @@ footer img {
   width: auto;
 }
 
-.tips .container .row .col .p-bases {
+.tips .container .row .col .container-tips {
+  background-color: black;
+  height: auto;
+  width: 800px;
+  opacity: 0.8;
+  border-radius: 20px;
+  position: relative;
+  top: -20px;
+  left: 70px;
+}
+
+.tips .container .row .col .container-tips1 {
+  position: relative;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 20px;
+  height: 400px;
+  width: 720px;
+  padding: 100px;
+}
+
+.tips .container .row .col .container-tips1 .p-bases {
   padding: 0px;
-  margin: -60px;
+  margin: -80px;
+  font-size: 15px;
 }
 
 /*Tutoriales*/
 .v-tutoriales h2 {
   text-align: center;
   padding-top: 50px;
+  color: black;
 }
 
 .v-tutoriales .grid .g-col-6 {
@@ -258,12 +294,124 @@ footer img {
 .contacto {
   min-height: 100vh;
   padding: 20px;
+  color: black;
+  font-size: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .padre .contenedor_texto2, .contenedor_texto, .body_origen .padre .contenedor_texto2 {
     margin: 30px;
     min-height: 400px;
+  }
+  .tips {
+    margin: 0;
+    padding: 0;
+  }
+  .tips .container {
+    margin: 0;
+    padding: 0;
+  }
+  .tips .container .row {
+    margin: 0;
+    padding: 0;
+  }
+  .tips .container .row .img-tip {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    bottom: 40px;
+  }
+  .tips .container .row .col {
+    margin: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tips .container .row .col .container-tips1 {
+    position: relative;
+    left: 70px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .grid .g-col-6 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 400px;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .grid .g-col-6 {
+    margin: -100px;
+  }
+  .tips {
+    font-size: 13px;
+    position: relative;
+    margin-left: -150px;
+  }
+  .tips .container {
+    margin: 0;
+    padding: 0;
+  }
+  .tips .container .row {
+    margin: 0;
+    padding: 0;
+  }
+  .tips .container .row .img-tip {
+    height: 350px;
+  }
+  .tips .container .row .col {
+    margin: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tips .container .row .col .container-tips {
+    height: 375px;
+    width: 365px;
+  }
+  .tips .container .row .col .container-tips1 {
+    position: relative;
+    top: 200px;
+    height: 800px;
+    width: 385px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .tips .container {
+    margin: 0;
+    padding: 0;
+  }
+  .tips .container .row {
+    margin: 0;
+    padding: 0;
+  }
+  .tips .container .row .img-tip {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    left: 70px;
+  }
+  .tips .container .row .col {
+    margin: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tips .container .row .col .container-tips1 {
+    position: relative;
+    left: 70px;
+  }
+  .table td {
+    background-color: black;
+    color: white;
+    opacity: 0.8;
   }
 }
 /*# sourceMappingURL=style.css.map */

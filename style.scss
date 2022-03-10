@@ -1,14 +1,16 @@
 
 @import "variantes";
 
-.navbar-nav{
+.navbar-nav, .navbar{
     a:hover{
         color: map-get($map,col) !important;
+        transition: 0.3s;
+        
             }
         }
    
-/* Index style*/
 
+/* Index style*/
 body{
     font-family: 'Saira Condensed', sans-serif;
     background-color: white;
@@ -78,15 +80,14 @@ header{
     }
 }
 
-/* Section de videoturoriales index*/
 
+/* Section de videoturoriales index*/
 section{
     background: url(img/WallpapermuaBN.png);
     background-size: cover;
     background-color: $color;
     min-height: 80vh;
     color: white;
-    text-shadow: black -3px -2px;
     font-size: 25px;
     
     
@@ -129,12 +130,19 @@ section{
         }
     }
 
+    .container-texto{
+        background-color: black;
+        border-radius: 20px;
+        padding: 20px;
+        opacity: 0.8;
+        box-shadow: 2px 2px 25px $color;
 
+    }
 
 }
 
-/*Footer index*/
 
+/*Footer index*/
 footer{
  
     .navbar{
@@ -174,8 +182,8 @@ footer{
 
 }
 
-/* Estilo origenes.html */
 
+/* Estilo origenes.html */
 .body_origen{
     background-color: $color;
     background: url(img/WallpapermuaBN.png);
@@ -210,16 +218,20 @@ footer{
             }
         }
 }
-    
-/* Tips*/
 
+
+/* Tips*/
 .tips{
     padding: 50px;
     margin: 2px;
+    font-size: 20px;
+    
 
     h2{
         text-align: center;
         margin-bottom: 50px;
+        margin-top: -20px;
+        color: black;
     }
     
     .container{
@@ -237,23 +249,46 @@ footer{
                         width: auto;
                     }
                     /* section tip1*/
-                    .p-bases{
-                        padding: 0px;
-                        margin: -60px;
 
+                    .container-tips{
+                        background-color: black;
+                        height: auto;
+                        width: 800px;
+                        opacity: 0.8;
+                        border-radius: 20px;
+                        position: relative;
+                        top: -20px;
+                        left: 70px;
                     }
 
+                    .container-tips1{
+                        position:relative;
+                        background-color: black;
+                        opacity: 0.8;
+                        border-radius: 20px;
+                        height: 400px;
+                        width: 720px;
+                        padding: 100px;
+
+                        .p-bases{
+                            padding: 0px;
+                            margin: -80px;
+                            font-size: 15px;
+    
+                        }
+                    }
             }
         }
     }
 }
 
-/*Tutoriales*/
 
+/*Tutoriales*/
 .v-tutoriales{
     h2{
         text-align: center;
         padding-top: 50px;
+        color: black;
     }
     .grid{
         .g-col-6{
@@ -262,18 +297,135 @@ footer{
     }
 }
 
-/* CONTACTO */
 
+/* CONTACTO */
 .contacto{
     min-height: 100vh;
     padding: 20px;
+    color: black;
+    font-size: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .padre .contenedor_texto2, .contenedor_texto{
         margin: 30px;
         min-height: 400px;
     }
+
+    .tips{
+        margin: 0;
+        padding: 0;
+        .container{
+            margin: 0;
+            padding: 0;
+            .row{
+                margin: 0;
+                padding: 0;
+                .img-tip{
+                    justify-content: center;
+                    position: relative;
+                    bottom: 40px;
+                    }
+                .col{
+                    margin: 40px;
+                    justify-content: center;
+                    .container-tips1{
+                        position: relative;
+                        left: 70px;
+
+                    }
+                }
+            }
+        }
+    }
+
+
     
 }
 
+@media screen and (max-width: 590px) {
+    .grid{
+        .g-col-6{
+            justify-content: center;
+            height: 400px;
+            width: 600px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .grid{
+        .g-col-6{
+            margin: -100px;
+        }
+    }
+    .tips{
+        font-size: 13px;
+        position: relative;
+        margin-left: -150px;
+        .container{
+            margin: 0;
+            padding: 0;
+            .row{
+                margin: 0;
+                padding: 0;
+                .img-tip{
+                    height: 350px;
+                    }
+                .col{
+                    margin: 40px;
+                    justify-content: center;
+                    .container-tips{
+                        height: 375px;
+                        width: 365px;
+                    }
+
+                    .container-tips1{
+                        position: relative;
+                        top: 200px;
+                        height: 800px;
+                        width: 385px;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    .tips{
+        .container{
+            margin: 0;
+            padding: 0;
+            .row{
+                margin: 0;
+                padding: 0;
+                .img-tip{
+                    justify-content: center;
+                    position: relative;
+                    left: 70px;
+                    }
+                .col{
+                    margin: 20px;
+                    justify-content: center;
+                    .container-tips1{
+                        position: relative;
+                        left: 70px;
+
+                    }
+                }
+            }
+        }
+    }
+    .table{
+        td{
+            background-color: black;
+            color: white;
+            opacity: 0.8;
+        }
+    }
+
+}
