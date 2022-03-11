@@ -24,7 +24,7 @@ header{
         background-color: white !important;
         position: sticky;
         top: 0;
-        z-index: 1;
+        z-index: 3;
         box-shadow: 10px 0px 20px;
     }
 
@@ -37,7 +37,7 @@ header{
         font-size: 18px;
     }
 
-    #navbarNavAltMarkup img{
+    .navbar-nav img{
         height: 38px;
         width: 40px;
         position: relative;
@@ -108,6 +108,8 @@ section{
     }
 
     .video0{
+        display: flex;
+        justify-content: center;
         .video-index0{
             height: 550px;
             width: auto;

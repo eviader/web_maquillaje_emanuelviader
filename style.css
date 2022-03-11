@@ -17,7 +17,7 @@ header .navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   -webkit-box-shadow: 10px 0px 20px;
           box-shadow: 10px 0px 20px;
 }
@@ -33,7 +33,7 @@ header #navbarNavAltMarkup {
   font-size: 18px;
 }
 
-header #navbarNavAltMarkup img {
+header .navbar-nav img {
   height: 38px;
   width: 40px;
   position: relative;
@@ -100,6 +100,15 @@ section .col {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+section .video0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section .video0 .video-index0 {
